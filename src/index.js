@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
       <Route path="/register" element={<Register />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
   </Router>
