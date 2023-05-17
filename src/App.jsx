@@ -5,11 +5,14 @@ import AboutComponent from './components/AboutComponent'
 import WhyUsComponent from './components/WhyUsComponent'
 import CourseLandingComponents from './components/CourseLandingComponents'
 import HeroBannerComponent from './components/HeroBannerComponent'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <div className='font-lato'>
+      <Navbar />
       {/* hero banner start */}
       <section className='hero-banner'>
         <HeroBannerComponent />
@@ -40,6 +43,8 @@ function App() {
         <WhyUsComponent />
       </section>
       {/* why us section wnd  */}
+
+      <Footer />
     </div>
   );
 }

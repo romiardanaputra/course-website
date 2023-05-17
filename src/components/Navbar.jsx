@@ -11,7 +11,7 @@ function Navbar() {
             <nav className="bg-[#746D69] px-3 sm:px-4 py-5 dark:bg-gray-900 fixed  w-full z-[100000000] top-0 left-0 dark:border-gray-600">
                 <div className="container flex flex-wrap items-center justify-between mx-auto">
                     <Link to='/' className="flex items-center" >
-                        <span className="self-center text-slate-100 text-xl font-semibold whitespace-nowrap dark:text-white">Tolol Course</span>
+                        <span className="self-center text-slate-100 text-xl font-semibold whitespace-nowrap dark:text-white">Code Furious</span>
                     </Link>
 
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">

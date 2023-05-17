@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ButtonAnimated from '../components/Button/ButtonAnimated'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 function Contact() {
   const color = '#fff'
   const bg = '[#C58940]'
   return (
     <div>
+      <Navbar />
       <div className='bg-[#E8E9EB] h-[40vh] flex justify-center items-center'>
         <p className='text-[33.18px] mt-20 text-center text-[#746D69] xl:text-[3.583rem]'>Contact Us</p>
       </div>
@@ -42,11 +45,12 @@ function Contact() {
               <label for="message" className="leading-7 text-sm text-gray-600">Message</label>
               <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             </div>
-            <ButtonAnimated submitBtn={'submit'} color={color} bg={bg} borderColor={'[#C58940]'} textColor={'[#C58940]'}/>
+            <ButtonAnimated submitBtn={'submit'} color={color} bg={bg} borderColor={'[#C58940]'} textColor={'[#C58940]'} />
             <p className="text-xs text-gray-500 mt-3">Please fill the form base on requirement needed</p>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
